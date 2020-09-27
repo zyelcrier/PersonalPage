@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<style>
+		body {
+			background: black;
+			height: 100%;
+      margin: 0;
+			font-family: 'Cinzel Decorative', cursive;
+			color: white;
+		}
+
+		nav{
+			background-color: cadetblue;
+		}
+
+		nav span{
+			float:right;
+		}
+		#cp{
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		div#cp button {
+			background-color: transparent;
+			border: none;
+			text-shadow: 2px 2px #c3d7d9;
+		}
+
+		div#cp button:hover {
+			background-color: transparent;
+			border: none;
+			color: silver;
+		}
+
+		div#cp #message {
+			word-spacing: 20px;
+			font-size: 25px;
+			line-height: 90px;
+			color: black;
+			background-color: cadetblue
+		}
+
+		section.left{
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			width: 20%;
+background: rgb(195,215,217);
+background: linear-gradient(180deg, rgba(195,215,217,1) 32%, rgba(43,109,113,1) 79%, rgba(0,0,0,1) 100%);
+			box-shadow: 5px 10px #888888;
+		}
+
+		section#visual_box{
+			float:right;
+			flex-direction: column;
+			flex-grow:2;
+			background: url(images/sc.gif) no-repeat center center fixed;
+			background-size: cover;
+			min-height: 100%;
+			width: 80%;
+			text-align: center;
+
+		}
+
+		div#song_directory button{
+			background-color: transparent;
+			line-height:50px;
+			font-size: 20px;
+			border: none;
+			color: black;
+			text-decoration-line: underline;
+			font-family: 'Cinzel Decorative', cursive;
+		}
+
+		div#song_directory button:hover{
+			border: none;
+			color: silver;
+		}
+
+		div.root-layout{
+		  flex-grow: 2;
+  		display: flex;
+  		flex-direction: column;
+  		min-height: 100%;
+  		overflow-x: hidden;
+		}
+
+		main {
+      flex: 1 0 auto;
+   }
+
+
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poiret+One&display=swap" rel="stylesheet">
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body onload="loadSongs()">
+<div class="root-layout">
+	<nav>
+		<a href="home.html"> Zyel Crier</a>
+		<a href="index.html"> Favorite music</a>
+		<a href="bio.html"> Biography </a>
+		<span style="margin-right: 500px; word-spacing: 10px; text-decoration-line: underline;">Some of my favorite songs</span>
+	</nav>
+ <div class="main">
+
+	<!-- Control Panel will go here -->
+	<section class="left">
+		<div id="song_directory">
+		</div>
+		<div id="cp">
+			<div>
+				<p id="message">Waiting</p>
+			</div>
+			<button id="play">
+				<i class="material-icons">play_arrow</i>
+			</button>
+			<button id="stop">
+				<i class="material-icons">stop</i>
+			</button>
+			<button id="pause">
+				<i class="material-icons">pause</i>
+			</button>
+			<button id="mute">
+				<i class="material-icons">volume_mute</i>
+			</button>
+			<button id="volup">
+				<i class="material-icons">volume_up</i>
+			</button>
+			<button id="voldwn">
+				<i class="material-icons">volume_down</i>
+			</button>
+			<button id="next">
+				<i class="material-icons">skip_next</i>
+			</button>
+		</div>
+	</section>
+
+	<section id="visual_box">
+	</section>
+	</div>
+
+	<!-- Audio player will go here -->
+	<audio id="player0">
+		<source src="music/song0.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="player1">
+		<source src="music/song1.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="player2">
+		<source src="music/song2.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="player3">
+		<source src="music/song3.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="player4">
+		<source src="music/song4.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="player5">
+		<source src="music/song5.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="player6">
+		<source src="music/song6.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="player7">
+		<source src="music/song7.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="player8">
+		<source src="music/song8.mp3" type="audio/mpeg">
+	</audio>
+
+	<footer class="page-footer">
+		@ Copyright Zyel Amati Crier jones-kinilem Inc
+	</footer>
+	<script src="app.js"></script>
+	</div>
+
+</body></html>

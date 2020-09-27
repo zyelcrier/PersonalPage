@@ -1,0 +1,70 @@
+html, body {
+  height: 100%;
+  margin: 0;
+	font-family: 'Cinzel Decorative', cursive;
+			color: white;
+	background: url("images/treewater.jpg") no-repeat center center fixed;
+}
+div.root-layout{
+	min-height: 100%;
+	height: 100%;
+
+}
+
+div.main{
+	height: 100%;
+	background-color: transparent;
+}
+
+nav{
+	background-color: cadetblue;
+}
+
+nav a{
+	padding: 10px;
+}
+
+footer.page-footer{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background-color: cadetblue;
+}
+
+img#face{
+	margin-top: 30px;
+	align-self: center;
+	height: 200px;
+	width: 70%;
+	border-radius: 50%;
+}
+
+div.img-cont{
+	align-items: center;
+	width:25%;
+	padding-right:20px;
+	float:left;
+
+}
+
+div.intro {
+	width:75%;
+	float: right;
+}
+
+.intro blockquote{
+	border-left: 5px solid #000000;
+}
+
+.intro h1{
+	font-size: 67px;
+	word-spacing:
+}
+
+td img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+	max-height: 200px;
+}
